@@ -53,7 +53,8 @@
         text-shadow: 0 0 5px #808080, 0 0 10px #808080, 0 0 15px #808080, 0 0 20px #808080;
     }
     .btn.glowing:hover {
-    box-shadow: 0 0 5px #00f, 0 0 25px #00f, 0 0 50px #00f, 0 0 200px #00f;
+    box-shadow: 0 0 5px rgb(203, 177, 255), 0 0 25px rgb(107, 107, 107),
+          0 0 50px rgb(106, 106, 106), 0 0 200px rgb(110, 110, 110);
     }
     #certification .img-fluid:hover {
         transform: scale(2);
@@ -82,31 +83,85 @@
 
 </head>
 <body>
-    <header class="text-white text-center py-4">
-        <nav class="d-flex justify-content-center align-items-center">
-            <a class="mx-3 text-white" href="#home"><b>Home</b></a>
-            <a class="mx-3 text-white" href="#aboutme"><b>About Me</b></a>
-            <a class="mx-3 text-white" href="#projects"><b>Projects</b></a>
-            <a class="mx-3 text-white" href="#certification"><b>Certification</b></a>
-            <a class="mx-3 text-white" href="#Language"><b>Languages</b></a>
-            <a class="mx-3 text-white" href="#skills"><b>Skills</b></a>
-            <a class="mx-3 text-white" href="#education"><b>Education</b></a>
-        </nav>
+    <header
+      class="text-white text-center py-4"
+      style="
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: rgba(10, 10, 10, 0.9);
+        backdrop-filter: blur(10px);
+      "
+    >
+      <nav class="d-flex flex-wrap justify-content-center align-items-center">
+        <a class="mx-2 my-1 text-white" href="#home"><b>Home</b></a>
+        <a class="mx-2 my-1 text-white" href="#aboutme"><b>About Me</b></a>
+        <a class="mx-2 my-1 text-white" href="#projects"><b>Projects</b></a>
+        <a class="mx-2 my-1 text-white" href="#certification"
+          ><b>Certification</b></a
+        >
+        <a class="mx-2 my-1 text-white" href="#Language"><b>Languages</b></a>
+        <a class="mx-2 my-1 text-white" href="#skills"><b>Skills</b></a>
+        <a class="mx-2 my-1 text-white" href="#education"><b>Education</b></a>
+      </nav>
     </header>
-    <section class="text-dark py-5" id="home" style="background: rgba( 255, 255, 255, 0.25 ); box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); backdrop-filter: blur( 4px ); -webkit-backdrop-filter: blur( 4px ); border-radius: 10px; border: 1px solid rgba( 255, 255, 255, 0.18 );">
-    <br><br><br><br>
-    <div class="container d-flex align-items-center justify-content-between">
-        <img alt="GitHub Profile Image" src="https://github.com/Vaibhaavw/Vaibhaavw.github.io/raw/main/v4.jpg" class="img-fluid rounded-circle" style="width: 400px; height: 400px; object-fit: cover;">
-        <div>
+    <section
+      class="text-dark py-5"
+      id="home"
+      style="
+        background: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+      "
+    >
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image Column -->
+          <div class="col-md-6 text-center">
+            <img
+              alt="ecommerce"
+              src="C:\Users\vaibh\Downloads\v4.jpg"
+              class="img-fluid rounded-circle"
+              style="
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                width: 400px;
+                height: 400px;
+              "
+            />
+          </div>
+
+          <!-- Text Column -->
+          <div class="col-md-6 text-center text-md-left mt-4 mt-md-0">
             <h1 class="mb-3 text-dark glowing">Vaibhav Waghmare</h1>
-            <h2 class="mb-3 text-dark glowing text-center">Software Developer</h2>
+            <h2 class="mb-3 text-dark glowing text-center text-md-left">
+              Software Developer
+            </h2>
+          </div>
         </div>
-    </div><br>
-    <footer style="display: flex; justify-content: center;">
-    <a href="https://www.linkedin.com/in/vaibhav-waghmare-57a25a29b/" target="_blank" class="btn btn-primary glowing btn-lg" style="margin-right: 10px;">LinkedIn</a>
-    <a href="https://github.com/Vaibhaavw" target="_blank" class="btn btn-dark glowing btn-lg">GitHub</a>
-</footer>
-</section><br><br>
+        <div class="row">
+          <div class="col text-center">
+            <a
+              href="https://www.linkedin.com/in/vaibhav-waghmare-57a25a29b/"
+              target="_blank"
+              class="btn btn-primary glowing btn-lg"
+              style="margin-right: 10px"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/Vaibhaavw"
+              target="_blank"
+              class="btn btn-dark glowing btn-lg"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </section><br><br>
 <section class="text-dark py-5" id="aboutme" style="background: rgba( 10, 10, 10, 0.45 ); box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); backdrop-filter: blur( 4px ); -webkit-backdrop-filter: blur( 4px ); border-radius: 5px; border: 1px solid rgba( 255, 255, 255, 0.18 );">
 
   <div class="container py-5">
