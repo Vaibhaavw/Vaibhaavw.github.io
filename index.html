@@ -59,17 +59,6 @@
       .square {
         border-radius: 0 !important;
       }
-
-      .glowing {
-        font-family: "Times New Roman", Times, serif;
-        color: #ffffff; /* This sets the text color to white */
-        text-shadow: 0 0 2px #87ceeb, 0 0 2px #87ceeb, 0 0 4px #87ceeb,
-          0 0 4px #87ceeb;
-      }
-      .btn.glowing:hover {
-        box-shadow: 0 0 5px rgb(203, 177, 255), 0 0 25px rgb(107, 107, 107),
-          0 0 50px rgb(106, 106, 106), 0 0 200px rgb(110, 110, 110);
-      }
       #certification .img-fluid:hover {
         transform: scale(2);
         transition: transform 0.3s ease;
@@ -93,6 +82,36 @@
         object-fit: cover;
         border-radius: 50%;
       }
+        /* Responsive Font Sizes */
+  @media (max-width: 768px) {
+    h1.mb-3 {
+      font-size: 2.5rem; /* Smaller font size for h1 on mobile screens */
+    }
+    h2.mb-3 {
+      font-size: 1.75rem; /* Smaller font size for h2 on mobile screens */
+    }
+  }
+
+  .glowing {
+    font-family: "Times New Roman", Times, serif;
+    color: #ffffff; /* This sets the text color to white */
+    text-shadow: 0 0 2px #87ceeb, 0 0 2px #87ceeb, 0 0 4px #87ceeb,
+      0 0 4px #87ceeb;
+  }
+
+  .btn.glowing:hover {
+    box-shadow: 0 0 5px rgb(203, 177, 255), 0 0 25px rgb(107, 107, 107),
+      0 0 50px rgb(106, 106, 106), 0 0 200px rgb(110, 110, 110);
+  }
+
+  /* Ensure text does not overflow */
+  h1, h2 {
+    word-wrap: break-word;
+  }
+
+  .text-break {
+    word-break: break-word;
+  }
     </style>
   </head>
   <body>
@@ -133,7 +152,6 @@
     border: 1px solid rgb(0, 0, 0);
   "
 >
-  <br /><br />
   <div class="container">
     <div class="row align-items-center">
       <!-- Image Column -->
@@ -141,7 +159,6 @@
         <img
           alt="ecommerce"
           src="https://github.com/Vaibhaavw/Vaibhaavw.github.io/raw/main/v4.jpg"
-          alt="Example Image"
           class="img-fluid rounded-circle"
           style="
             max-width: 100%;
@@ -155,17 +172,12 @@
 
       <!-- Text Column -->
       <div class="col-md-6 text-center text-md-left mt-4 mt-md-0">
-        <h1 class="mb-3 glowing display-4 display-md-3 display-lg-1">
-          Vaibhav Waghmare
-        </h1>
-        <h2 class="mb-3 glowing text-center text-md-left h3 h-md-2">
+        <h1 class="mb-3 glowing display-4 text-break">Vaibhav Waghmare</h1>
+        <h2 class="mb-3 glowing text-center text-md-left h3 text-break">
           Software Developer
         </h2>
       </div>
     </div>
-    <br />
-    <br />
-    <br />
     <div class="row">
       <div class="col text-center">
         <a
@@ -179,21 +191,9 @@
       </div>
     </div>
     <!-- Social Media Icons -->
-    <br />
     <div class="row">
       <div class="col text-center">
-        <!-- <a
-          href="https://twitter.com/yourprofile"
-          target="_blank"
-          class="mx-2"
-        >
-          <i class="fab fa-twitter fa-2x" style="color: #1da1f2"></i>
-        </a> -->
-        <a
-          href="https://facebook.com/yourprofile"
-          target="_blank"
-          class="mx-2"
-        >
+        <a href="https://facebook.com/yourprofile" target="_blank" class="mx-2">
           <i class="fab fa-facebook fa-2x" style="color: #4267b2"></i>
         </a>
         <a
