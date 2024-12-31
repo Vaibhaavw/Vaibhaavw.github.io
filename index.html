@@ -23,7 +23,6 @@
         margin: 0 auto; /* center the card */
       }
       body {
-        /* background-image: url("https://framerusercontent.com/images/IHcv84x9EdlYeh3R9MYTis0qsuU.jpg"); */
         background-color: rgb(6, 2, 22);
         background-size: cover;
       }
@@ -41,7 +40,7 @@
         background-image: url("https://4kwallpapers.com/images/wallpapers/gradient-background-6016x3384-11027.jpg");
       }
       header a {
-        transition: all 0.3s ease-in-out; /* Smooth transition */
+        transition: all 0.3s ease-in-out;
       }
       header a:hover {
         font-size: 1.2em;
@@ -54,8 +53,32 @@
       h2.mb-3 {
         font-size: 3em;
       }
+      @media (max-width: 768px) {
+        h1.mb-3 {
+          font-size: 3em;
+        }
+        h2.mb-3 {
+          font-size: 1.5em;
+        }
+        .col-md-6 img {
+          width: 250px;
+          height: 250px;
+        }
+      }
+      @media (max-width: 576px) {
+        h1.mb-3 {
+          font-size: 2.5em;
+        }
+        h2.mb-3 {
+          font-size: 1.2em;
+        }
+        .col-md-6 img {
+          width: 200px;
+          height: 200px;
+        }
+      }
       .card:hover {
-        box-shadow: 0 0 80px rgba(10, 10, 10, 0.9); /* This creates a green glow when the card is hovered */
+        box-shadow: 0 0 80px rgba(10, 10, 10, 0.9);
       }
       .square {
         border-radius: 0 !important;
@@ -63,7 +86,7 @@
 
       .glowing {
         font-family: "Times New Roman", Times, serif;
-        color: #ffffff; /* This sets the text color to white */
+        color: #ffffff;
         text-shadow: 0 0 2px #87ceeb, 0 0 2px #87ceeb, 0 0 4px #87ceeb,
           0 0 4px #87ceeb;
       }
@@ -123,29 +146,23 @@
         <a class="mx-2 my-1 text-white custom-header" href="#certification"
           ><b>Certification</b></a
         >
-
-        <!-- <a class="mx-2 my-1 text-white" href="#skills"><b>Skills</b></a>
-        <a class="mx-2 my-1 text-white" href="#education"><b>Education</b></a> -->
       </nav>
     </header>
     <style>
       .custom-header {
-        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /* You can change this to any other font */
-        font-size: 1.1rem; /* Adjust font size */
-        line-height: 1.6; /* Adjust line height for better readability */
-        /* font-style: italic;  */
-        /* Optional: Italic style; */
-        letter-spacing: 0.9px; /* Adjust letter spacing for a more elegant look */
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        letter-spacing: 0.9px;
       }
     </style>
     <section
       class="text-dark py-5"
       id="home"
       style="
-        /* background: rgba(0, 0, 0, 0.481); */
         box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
         backdrop-filter: blur(4px);
-        -webkit-backdrop-filter: blur(4 px);
+        -webkit-backdrop-filter: blur(4px);
         border-radius: 10px;
         border: 1px solid rgb(0, 0, 0);
       "
@@ -180,9 +197,7 @@
             </h2>
           </div>
         </div>
-        <br />
-        <br />
-        <br />
+        <br /><br /><br />
         <div class="row">
           <div class="col text-center">
             <a
@@ -828,136 +843,6 @@
       </section>
     </section>
     <br /><br />
-    <!-- <section class="text-dark py-5" id="skills">
-      <div class="section-header text-white text-center mb-5">
-        <h1 class="text-light">Skills</h1>
-        <br />
-        <p class="lead">
-          Showcasing my expertise and proficiency in various areas
-        </p>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card text-bg-dark mb-3">
-              <div class="card-header text-center">Communication</div>
-              <div class="card-body bg-dark">
-                <i class="fas fa-comments fa-3x text-primary mb-3"></i>
-
-                <p class="card-text text-white text-center">
-                  Proficient in conveying ideas and collaborating effectively.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card text-bg-dark mb-3">
-              <div class="card-header text-center">Project Management</div>
-              <div class="card-body bg-dark">
-                <i class="fas fa-tasks fa-3x text-primary mb-3"></i>
-
-                <p class="card-text text-white text-center">
-                  Skilled in organizing tasks and leading teams to success.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card text-bg-dark mb-3">
-              <div class="card-header text-center">Front-End Development</div>
-              <div class="card-body bg-dark">
-                <i class="fas fa-code fa-3x text-primary mb-3"></i>
-
-                <p class="card-text text-white text-center">
-                  Experienced in creating responsive and user-friendly
-                  interfaces.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card text-bg-dark mb-3">
-              <div class="card-header text-center">Team Player</div>
-              <div class="card-body bg-dark">
-                <i class="fas fa-users fa-3x text-primary mb-3"></i>
-
-                <p class="card-text text-white text-center">
-                  A collaborative individual who thrives in team environments.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="text-dark py-5" id="education">
-      <div class="section-header text-center">
-        <h1>Educational Details</h1>
-      </div>
-      <div class="container py-5">
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="card border-0 shadow">
-              <div class="card-body text-center">
-                <h2 class="card-title text-uppercase text-muted mb-0">SSC</h2>
-                <h2 class="font-weight-bold mb-3">
-                  Modern High-School Solapur
-                </h2>
-                <p class="text-muted mb-3">
-                  Stream: Marathi <br />Year: 2018 Score: 75%
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card border-0 shadow">
-              <div class="card-body text-center">
-                <h2 class="card-title text-uppercase text-muted mb-0">HSC</h2>
-                <h1 class="font-weight-bold mb-2">WIT Solapur</h1>
-                <p class="text-muted mb-3">
-                  Stream: Science with PCMB <br />Year: 2020 Score: 49%
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card border-0 shadow">
-              <div class="card-body text-center">
-                <h2 class="card-title text-uppercase text-muted mb-0">
-                  Bachelors of Computer Application
-                </h2>
-                <h1 class="font-weight-bold mb-2">
-                  Abhijit Kadam Institute of Management and Social Science
-                  Solapur
-                </h1>
-                <p class="text-muted mb-3">
-                  Stream: Computer Applicaiton <br />Year: 2020 Score: 80%
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="card border-0 shadow">
-              <div class="card-body text-center">
-                <h2 class="card-title text-uppercase text-muted mb-0">
-                  Master's of Computer Application(Persuing)
-                </h2>
-                <h1 class="font-weight-bold mb-2">
-                  MIT Vishwaprayag University Solapur
-                </h1>
-                <p class="text-muted mb-3">
-                  Stream: Computer Applicaiton <br />Year: 2023 Score: --%
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <footer class="footer">
       <div class="container">
