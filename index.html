@@ -23,7 +23,7 @@
         margin: 0 auto; /* center the card */
       }
       body {
-        /* background-image: url("https://i.pinimg.com/736x/eb/a1/30/eba13010f30492401e35155c39767862.jpg"); */
+        /* background-image: url("https://framerusercontent.com/images/IHcv84x9EdlYeh3R9MYTis0qsuU.jpg"); */
         background-color: rgb(6, 2, 22);
         background-size: cover;
       }
@@ -38,6 +38,7 @@
       #home {
         background-position: center;
         background-size: cover;
+        background-image: url("https://4kwallpapers.com/images/wallpapers/gradient-background-6016x3384-11027.jpg");
       }
       header a {
         transition: all 0.3s ease-in-out; /* Smooth transition */
@@ -58,6 +59,17 @@
       }
       .square {
         border-radius: 0 !important;
+      }
+
+      .glowing {
+        font-family: "Times New Roman", Times, serif;
+        color: #ffffff; /* This sets the text color to white */
+        text-shadow: 0 0 2px #87ceeb, 0 0 2px #87ceeb, 0 0 4px #87ceeb,
+          0 0 4px #87ceeb;
+      }
+      .btn.glowing:hover {
+        box-shadow: 0 0 5px rgb(203, 177, 255), 0 0 25px rgb(107, 107, 107),
+          0 0 50px rgb(106, 106, 106), 0 0 200px rgb(110, 110, 110);
       }
       #certification .img-fluid:hover {
         transform: scale(2);
@@ -82,36 +94,6 @@
         object-fit: cover;
         border-radius: 50%;
       }
-        /* Responsive Font Sizes */
-  @media (max-width: 768px) {
-    h1.mb-3 {
-      font-size: 2.5rem; /* Smaller font size for h1 on mobile screens */
-    }
-    h2.mb-3 {
-      font-size: 1.75rem; /* Smaller font size for h2 on mobile screens */
-    }
-  }
-
-  .glowing {
-    font-family: "Times New Roman", Times, serif;
-    color: #ffffff; /* This sets the text color to white */
-    text-shadow: 0 0 2px #87ceeb, 0 0 2px #87ceeb, 0 0 4px #87ceeb,
-      0 0 4px #87ceeb;
-  }
-
-  .btn.glowing:hover {
-    box-shadow: 0 0 5px rgb(203, 177, 255), 0 0 25px rgb(107, 107, 107),
-      0 0 50px rgb(106, 106, 106), 0 0 200px rgb(110, 110, 110);
-  }
-
-  /* Ensure text does not overflow */
-  h1, h2 {
-    word-wrap: break-word;
-  }
-
-  .text-break {
-    word-break: break-word;
-  }
     </style>
   </head>
   <body>
@@ -126,13 +108,19 @@
       "
     >
       <nav class="d-flex flex-wrap justify-content-center align-items-center">
-        <a class="mx-2 my-1 text-white" href="#home"><b>Home</b></a>
-        <a class="mx-2 my-1 text-white" href="#aboutme"><b>About Me</b></a>
-        <a class="mx-2 my-1 text-white" href="#Language"
+        <a class="mx-2 my-1 text-white custom-header" href="#home"
+          ><b>Home</b></a
+        >
+        <a class="mx-2 my-1 text-white custom-header" href="#aboutme"
+          ><b>About Me</b></a
+        >
+        <a class="mx-2 my-1 text-white custom-header" href="#Language"
           ><b>Languages & Technologies</b></a
         >
-        <a class="mx-2 my-1 text-white" href="#projects"><b>Projects</b></a>
-        <a class="mx-2 my-1 text-white" href="#certification"
+        <a class="mx-2 my-1 text-white custom-header" href="#projects"
+          ><b>Projects</b></a
+        >
+        <a class="mx-2 my-1 text-white custom-header" href="#certification"
           ><b>Certification</b></a
         >
 
@@ -140,74 +128,81 @@
         <a class="mx-2 my-1 text-white" href="#education"><b>Education</b></a> -->
       </nav>
     </header>
+    <style>
+      .custom-header {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; /* You can change this to any other font */
+        font-size: 1.1rem; /* Adjust font size */
+        line-height: 1.6; /* Adjust line height for better readability */
+        /* font-style: italic;  */
+        /* Optional: Italic style; */
+        letter-spacing: 0.9px; /* Adjust letter spacing for a more elegant look */
+      }
+    </style>
     <section
-  class="text-dark py-5"
-  id="home"
-  style="
-    background: rgb(0, 0, 0);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgb(0, 0, 0);
-  "
->
-  <div class="container">
-    <div class="row align-items-center">
-      <!-- Image Column -->
-      <div class="col-md-6 text-center">
-        <img
-          alt="ecommerce"
-          src="https://github.com/Vaibhaavw/Vaibhaavw.github.io/raw/main/v4.jpg"
-          class="img-fluid rounded-circle"
-          style="
-            max-width: 100%;
-            height: auto;
-            object-fit: cover;
-            width: 400px;
-            height: 400px;
-          "
-        />
-      </div>
+      class="text-dark py-5"
+      id="home"
+      style="
+        /* background: rgba(0, 0, 0, 0.481); */
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4 px);
+        border-radius: 10px;
+        border: 1px solid rgb(0, 0, 0);
+      "
+    >
+      <br /><br />
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image Column -->
+          <div class="col-md-6 text-center">
+            <img
+              alt="ecommerce"
+              src="https://github.com/Vaibhaavw/Vaibhaavw.github.io/raw/main/v4.jpg"
+              alt="Example Image"
+              class="img-fluid rounded-circle"
+              style="
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                width: 400px;
+                height: 400px;
+              "
+            />
+          </div>
 
-      <!-- Text Column -->
-      <div class="col-md-6 text-center text-md-left mt-4 mt-md-0">
-        <h1 class="mb-3 glowing display-4 text-break">Vaibhav Waghmare</h1>
-        <h2 class="mb-3 glowing text-center text-md-left h3 text-break">
-          Software Developer
-        </h2>
+          <!-- Text Column -->
+          <div class="col-md-6 text-center text-md-left mt-4 mt-md-0">
+            <h1 class="mb-3 glowing display-4 display-md-3 display-lg-1">
+              Vaibhav Waghmare
+            </h1>
+            <h2 class="mb-3 glowing text-center text-md-left h3 h-md-2">
+              Software Developer
+            </h2>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div class="row">
+          <div class="col text-center">
+            <a
+              href="https://www.linkedin.com/in/vaibhav-waghmare-57a25a29b/"
+              target="_blank"
+              class="btn btn-primary btn-lg"
+              style="margin-right: 10px"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/Vaibhaavw"
+              target="_blank"
+              class="btn btn-dark btn-lg"
+              >GitHub</a
+            >
+          </div>
+        </div>
+        <br /><br /><br />
       </div>
-    </div>
-    <div class="row">
-      <div class="col text-center">
-        <a
-          href="https://www.linkedin.com/in/vaibhav-waghmare-57a25a29b/"
-          target="_blank"
-          class="btn btn-primary btn-lg"
-          style="margin-right: 10px"
-          >LinkedIn</a
-        >
-        <a href="https://github.com/Vaibhaavw" target="_blank" class="btn btn-dark btn-lg">GitHub</a>
-      </div>
-    </div>
-    <br><br>
-    <!-- Social Media Icons -->
-    <div class="row">
-      <div class="col text-center">
-        <a href="https://facebook.com/yourprofile" target="_blank" class="mx-2">
-          <i class="fab fa-facebook fa-2x" style="color: #4267b2"></i>
-        </a>
-        <a
-          href="https://instagram.com/yourprofile"
-          target="_blank"
-          class="mx-2"
-        >
-          <i class="fab fa-instagram fa-2x" style="color: #e1306c"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <br /><br />
     <section
@@ -223,10 +218,11 @@
       "
     >
       <div class="container py-5">
-        <div class="col-xl-6 col-lg-9 mx-auto text-center">
+        <div class="col-xl-7 col-lg-9 mx-auto text-center">
           <br /><br />
-          <p class="lead text-white">
-            MCA Candidate | Web Development | Data Analysis | Machine Learning
+          <p class="lead text-white custom-paragraph">
+            MCA Candidate | Web Development | Data Analysis | Machine Learning|
+            <br />------------------------------------------------------------<br />
             Motivated and detail-oriented MCA candidate at MIT Vishwaprayag
             University with hands-on experience in full-stack web development
             and software engineering. Proficient in HTML, CSS, JavaScript,
@@ -248,6 +244,19 @@
         </div>
       </div>
     </section>
+
+    <!-- Add Custom Font Styles Here -->
+    <style>
+      .custom-paragraph {
+        font-family: "Georgia", serif; /* You can change this to any other font */
+        font-size: 1.1rem; /* Adjust font size */
+        line-height: 1.6; /* Adjust line height for better readability */
+        font-style: italic;
+        /* Optional: Italic style; */
+        letter-spacing: 0.8px; /* Adjust letter spacing for a more elegant look */
+      }
+    </style>
+
     <br /><br />
     <section
       class="text-dark py-5"
@@ -632,6 +641,7 @@
         <br />
         <h1 class="text-white text-center">Certifications & Achievements</h1>
       </div>
+
       <section>
         <div class="container py-5 d-flex align-items-center">
           <div class="row justify-content-center">
@@ -639,20 +649,23 @@
               <img
                 class="img-fluid rounded align-left"
                 alt="hero"
-                src="https://github.com/Vaibhaavw/Vaibhaavw.github.io/raw/main/cp1.jpeg"
+                src="https://github.com/Vaibhaavw/Vaibhaavw.github.io/raw/main/Introduction to Cyber Security.jpeg"
               />
             </div>
             <div class="col-lg-6">
               <h1 class="display-4 mb-4 text-white text-center">
-                Problem Solving Using Computational Thinking
+                Introduction to Cyber Security
               </h1>
+              <h2 class="text-center text-white">
+                By the Cisco Networking Academy
+              </h2>
               <p class="lead mb-4 text-light text-center">
-                Computational Thinking: I honed my ability to break down complex
-                problems into smaller, manageable components. Computer
-                Programming: I gained practical skills in coding and algorithmic
-                thinking. Critical Thinking: I learned to analyse problems
-                logically and devise efficient solutions.<br /><br /><a
-                  href="https://www.coursera.org/programs/learning-program-for-mit-vpu-students-uac6l/learn/computational-thinking-problem-solving"
+                The Introduction to Cyber Security course by Cisco Networking
+                Academy has provided me with a strong foundation in
+                cybersecurity concepts and practices. I am eager to apply these
+                skills to safeguard digital environments and contribute to the
+                field of cybersecurity.<br /><br /><a
+                  href="https://www.linkedin.com/posts/waghmare-vaibhaav_cybersecurity-ciscocertification-mitvpu-activity-7247568992859492353-e0EQ?utm_source=share&utm_medium=member_desktop"
                   class="btn btn-primary"
                   >Learn More</a
                 >
@@ -666,14 +679,18 @@
           <div class="row justify-content-center">
             <div class="col-lg-6 mb-3">
               <h1 class="display-4 mb-4 text-white text-center">
-                Practical Python for AI Coding 1
+                Cyber Threat Management
               </h1>
-              <p class="lead mb-4 text-light text-center">
-                I delved into Python syntax, functions, and libraries commonly
-                used in AI coding. Mastered NumPy, Pandas, and TensorFlow for
-                efficient data handling, built an AI coding environment and
-                explored Scikit-learn, TensorFlow, and Keras.<br /><br /><a
-                  href="https://www.coursera.org/programs/learning-program-for-mit-vpu-students-uac6l/learn/practical-python-for-ai-coding--preparation-for-coding"
+              <h2 class="text-center text-white">
+                By the Cisco Networking Academy
+              </h2>
+              <p class="lead mb-4 text-white text-center">
+                The Cyber Threat Management course by Cisco Networking Academy
+                has equipped me with a comprehensive understanding of
+                cybersecurity principles and practices. I am excited to leverage
+                these skills to protect digital assets and contribute to a safer
+                online environment.<br /><br /><a
+                  href="https://www.linkedin.com/posts/waghmare-vaibhaav_cybersecurity-continuouslearning-cisconetworkingacademy-activity-7279917386068033536-XJut?utm_source=share&utm_medium=member_desktop"
                   class="btn btn-primary"
                   >Learn More</a
                 >
@@ -683,12 +700,13 @@
               <img
                 class="img-fluid rounded"
                 alt="hero"
-                src="https://github.com/Vaibhaavw/Vaibhaavw.github.io/raw/main/cp2.jpeg"
+                src="https://github.com/Vaibhaavw/Vaibhaavw.github.io/raw/main/Cyber Threat Management.jpeg"
               />
             </div>
           </div>
         </div>
       </section>
+
       <section>
         <div class="container py-5 d-flex align-items-center">
           <div class="row justify-content-center">
@@ -746,6 +764,63 @@
                 class="img-fluid rounded"
                 alt="hero"
                 src="https://github.com/Vaibhaavw/Vaibhaavw.github.io/raw/main/cp4.jpeg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container py-5 d-flex align-items-center">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 mb-3">
+              <img
+                class="img-fluid rounded align-left"
+                alt="hero"
+                src="https://github.com/Vaibhaavw/Vaibhaavw.github.io/raw/main/cp1.jpeg"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-4 mb-4 text-white text-center">
+                Problem Solving Using Computational Thinking
+              </h1>
+              <p class="lead mb-4 text-light text-center">
+                Computational Thinking: I honed my ability to break down complex
+                problems into smaller, manageable components. Computer
+                Programming: I gained practical skills in coding and algorithmic
+                thinking. Critical Thinking: I learned to analyse problems
+                logically and devise efficient solutions.<br /><br /><a
+                  href="https://www.coursera.org/programs/learning-program-for-mit-vpu-students-uac6l/learn/computational-thinking-problem-solving"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container py-5 d-flex align-items-center">
+          <div class="row justify-content-center">
+            <div class="col-lg-6 mb-3">
+              <h1 class="display-4 mb-4 text-white text-center">
+                Practical Python for AI Coding 1
+              </h1>
+              <p class="lead mb-4 text-light text-center">
+                I delved into Python syntax, functions, and libraries commonly
+                used in AI coding. Mastered NumPy, Pandas, and TensorFlow for
+                efficient data handling, built an AI coding environment and
+                explored Scikit-learn, TensorFlow, and Keras.<br /><br /><a
+                  href="https://www.coursera.org/programs/learning-program-for-mit-vpu-students-uac6l/learn/practical-python-for-ai-coding--preparation-for-coding"
+                  class="btn btn-primary"
+                  >Learn More</a
+                >
+              </p>
+            </div>
+            <div class="col-lg-4">
+              <img
+                class="img-fluid rounded"
+                alt="hero"
+                src="https://github.com/Vaibhaavw/Vaibhaavw.github.io/raw/main/cp2.jpeg"
               />
             </div>
           </div>
@@ -883,5 +958,151 @@
         </div>
       </div>
     </section> -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- About Section -->
+          <div class="col-md-4">
+            <h4 class="section-title">About</h4>
+            <p>Vaibhav Waghmare</p>
+            <p>Full Stack Developer</p>
+            <p>Addr: Solapur, Maharashtra, India</p>
+            <p><i class="fas fa-envelope"></i> vaibhaavw@gmail.com</p>
+          </div>
+
+          <!-- Social Media Handles with Larger Icons and Names -->
+          <div class="col-md-4">
+            <h4 class="section-title">Social Media</h4>
+            <ul class="list-unstyled social-media-list">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/vaibhav-waghmare-57a25a29b/"
+                  ><i class="fab fa-linkedin"></i>_LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/Vaibhaavw"
+                  ><i class="fab fa-github"></i>_GitHub</a
+                >
+              </li>
+              <li>
+                <a href="https://www.facebook.com/Vaibhaav Waghmare"
+                  ><i class="fab fa-facebook"></i>_Facebook</a
+                >
+              </li>
+              <li>
+                <a href="https://t.me/vaibhaavw9527"
+                  ><i class="fab fa-telegram"></i>_Telegram</a
+                >
+              </li>
+              <li>
+                <a href="https://www.instagram.com/mr.vaibhaav"
+                  ><i class="fab fa-instagram"></i>_Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Connect with Me Section -->
+          <div class="col-md-4">
+            <h4 class="section-title">Connect with me</h4>
+            <form id="contactForm">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <input type="submit" value="Connect" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+    <style>
+      /* Increase the size of social media icons and names */
+      .social-media-list li a {
+        font-size: 1.2rem; /* Adjusts the font size for the text */
+        line-height: 2rem; /* Adds spacing between lines */
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .social-media-list li a i {
+        font-size: 2rem; /* Adjusts the icon size */
+        margin-right: 10px; /* Adds space between the icon and text */
+      }
+    </style>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          alert(`Thank you ${name}, we've received your email: ${email}`);
+        });
+    </script>
+    <style>
+      .footer {
+        background-color: #4e008e;
+        color: white;
+        padding: 40px 0;
+      }
+      .footer .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+      }
+      .footer a {
+        color: #ccc;
+        text-decoration: none;
+      }
+      .footer a:hover {
+        color: white;
+      }
+      .footer .social-icons a {
+        color: #ccc;
+        margin-right: 10px;
+        font-size: 1.2rem;
+      }
+      .footer .social-icons a:hover {
+        color: white;
+      }
+      .footer input {
+        border-radius: 20px;
+        padding: 10px;
+        width: 80%;
+        margin-bottom: 10px;
+      }
+      .footer input[type="submit"] {
+        background-color: #1c0c3c;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+      .footer input[type="submit"]:hover {
+        background-color: #1b79a4;
+      }
+    </style>
   </body>
 </html>
